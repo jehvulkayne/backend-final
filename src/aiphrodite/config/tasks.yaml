@@ -1,0 +1,48 @@
+data_collection_task:
+  description: >
+    Track user behavior on the website—including product views, scrolls, special requests—and simultaneously gather demographic data via account logins, cookie signals, or consented form inputs.
+  expected_output: >
+    A complete behavioral and demographic data set for each identified user.
+  agent: data_collector
+
+persona_creation_task:
+  description: >
+    Generate a human-readable, actionable customer persona from the collected data, while also anonymizing and clustering it for broader trend extraction.
+  expected_output: >
+    A dual-format persona output: one tailored to an individual salesperson, and one anonymized format usable for trend reporting.
+  agent: persona_architect
+
+persona_delivery_task:
+  description: >
+    Monitor for any upcoming in-person meeting bookings and, if confirmed, deliver the corresponding persona to the assigned staff member in advance.
+  expected_output: >
+    Timely and accurate persona transmission to meeting stakeholders upon appointment confirmation.
+  agent: meeting_dispatcher
+
+personalized_ad_task:
+  description: >
+    Use verified behavioral and personal data to match customers with the most relevant TikTok ads and submit them through the platform's audience tools.
+  expected_output: >
+    Targeted TikTok ad placements tailored to each customer based on their intent.
+  agent: ad_placer
+
+brand_alignment_task:
+  description: >
+    Analyze TikTok ad creatives against brand benchmarks scraped from official channels to ensure alignment in tone, production style, and messaging.
+  expected_output: >
+    A pass/fail decision for each ad creative based on brand fidelity.
+  agent: brand_guardian
+
+fraud_detection_task:
+  description: >
+    Analyze TikTok ad traffic in real time, flagging suspicious patterns like bots, spoofed domains, or unusual click rates, and trigger payment block protocols.
+  expected_output: >
+    A real-time flagging system that blocks or reports fraudulent impressions before payout.
+  agent: fraud_watcher
+
+crm_followup_task:
+  description: >
+    Update the CRM and initiate follow-up actions based on the persona and last known customer interactions across channels.
+  expected_output: >
+    Personalized, context-aware CRM responses triggered post-interaction.
+  agent: crm_adapter
